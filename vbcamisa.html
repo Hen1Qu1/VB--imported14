@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VB-imported</title>
+    <link rel="stylesheet" href="vbCSS/vb.css">
+    <link rel="stylesheet" href="vbCSS/vbcamisa.css"/>
+    <script src="vbJS/vb-funcoes.js"></script>
+    <script src="vbJS/value.js"></script>
+    <script src="vbJS/car.js"></script>
+</head>
+<body>
+ <div class="wrapper">
+   <header>
+       <hgroup id="titulo-vb">
+          <h1>VB-imported</h1>
+          <h3>Encontre sua Moda</h3>
+       </hgroup>
+   
+       <img id="img-logovb" src="vbPHOTO/logoVB.jpeg" alt="logo-vb" width="188px"/>
+
+      <nav id="nav-vb">
+         <ul type="disc">
+           <li><a href="index.html">Sobre</a></li>
+           <li><a href="vbcamisa.html">Polo/Camisa</a></li>
+           <li><a href="vbCalca.html">Calça/Bermuda</a></li> 
+           <li><a href="vbFrio.html">Roupa de Frio</a></li> 
+         </ul>
+      </nav>
+   </header> 
+
+    <div id="vb-form">
+
+        <h2 class="vb-model">Polo - Tommy Hilfiger</h2>
+        <img class="vb-cami" src="vbPHOTO/poloVerdeforte.jpeg" alt="" id="id-polO" width="350px"/>
+
+        <div class="vb-preco"><h1 id="preco">R$ 25,00</h1></div>
+
+       <hgroup id="vb-select">  
+        <h3><label for="vb-color">ESCOLHA A COR </label><select name="vb-color"  onchange="mudaFoto(this);" id="vb-color">
+               <option value="vbPHOTO/poloVerdeforte.jpeg">VERDE</option>
+               <option value="vbPHOTO/poloBlack.jpeg">PRETO</option>
+               <option value="vbPHOTO/poloPink.jpeg">ROSA</option>
+               <option value="vbPHOTO/poloGreenClaro.jpeg">VERDE CLARO</option>
+               <option value="vbPHOTO/poloBluedesbo.jpeg">AZUL MARINHO</option>
+               <option value="vbPHOTO/poloAzulClaro.jpeg">AZUL CLARO</option>
+               <option value="vbPHOTO/poloPretodesbo.jpeg">GRAFITE</option>
+               <option value="vbPHOTO/poloRed.jpeg">VERMELHO</option>>
+               <option value="vbPHOTO/poloPurple.jpeg">VINHO</option>
+               <option value="vbPHOTO/poloBranca.jpeg">BRANCA</option>
+               <option value="vbPHOTO/poloAmarela.jpeg">AMARELA</option>
+               <option value="vbPHOTO/poloSinza.jpeg">CINZA</option>
+        </select></h3>
+
+        <h3><label for="vb-size">ESCOLHA O TAMANHO </label><select name="vb-size" id="vb-size">
+            <option>P</option>
+            <option>M</option>
+            <option>G</option>
+            <option>GG</option>
+        </select></h3>
+      </hgroup> 
+
+        <hgroup id="vb-gene-quant">
+          <h2>Genero: M</h2>
+          <h2>Malha: Piquet</h2>
+          <label for="vb-quantid"><h2>Quantidade:</label><input type="number" name="box-value" id="vb-quantid" required="" min="1" max="100"/></h2>
+        </hgroup>  
+
+          <p class="VBaviso">Informe as especificações das peças que deseja, e vá até o final da pagina, para adicionar ao carrinho.</p>
+      </div>
+
+
+
+    <div id="vb-form">
+
+      <h2 class="vb-model">Polo - Hugo Boss</h2>
+      <img class="vb-cami" src="vbPHOTO/poloBossBlue.jpeg" alt="" id="id-polO-boss" width="350px"/>
+
+      <div class="vb-preco"><h1 id="preco">R$ 45,00</h1></div>
+
+     <hgroup id="vb-select">  
+      <h3><label for="vb-color2">ESCOLHA A COR </label><select name="vb-color"  onchange="mudaFoto2(this);" id="vb-color2">
+             <option value="vbPHOTO/poloBossBlue.jpeg">AZUL ESCURO</option>
+             <option value="vbPHOTO/poloBossRed.jpeg">VERMELHO</option>
+             <option value="vbPHOTO/poloBossBlack.jpeg">PRETO</option>
+      </select></h3>
+
+      <h3><label for="vb-size2">ESCOLHA O TAMANHO </label><select name="vb-size" id="vb-size2">
+          <option>P</option>
+          <option>M</option>
+          <option>G</option>
+          <option>GG</option>
+      </select></h3>
+    </hgroup> 
+
+      <hgroup id="vb-gene-quant">
+        <h2>Genero: M</h2>
+        <h2>Malha: Peruana</h2>
+        <label for="vb-quantid2"><h2>Quantidade:</label><input type="number" name="box-value" id="vb-quantid2" required="" min="1" max="100"/></h2>
+      </hgroup>  
+
+        <p class="VBaviso">Informe as especificações das peças que deseja, e vá até o final da pagina, para adicionar ao carrinho.</p>
+   </div>
+
+
+  
+  <div id="vb-form">
+
+    <h2 class="vb-model">Camisas - Times/Seleções</h2>
+    <img class="vb-cami" src="vbPHOTO/psg.jpeg" alt="" id="id-soccer" width="350px"/>
+
+    <div class="vb-preco"><h1 id="preco">R$ 24,90</h1></div>
+
+   <hgroup id="vb-select">  
+    <h3><label for="vb-team3">TIME / SELEÇÃO </label><select name="vb-team3"  onchange="mudaFoto3(this);" id="vb-team3">
+           <optgroup label="times da França">
+              <option value="vbPHOTO/psg.jpeg">PSG - 1</option>
+              <option value="vbPHOTO/psg2.jpeg">PSG - 2</option>
+              <option value="vbPHOTO/psg3.jpeg">PSG - 3</option>
+           </optgroup> 
+  
+           <optgroup label="times de SP">
+              <option value="vbPHOTO/corinthians.jpeg">CORINTHIANS - 1</option>
+              <option value="vbPHOTO/corinthians2.jpeg">CORINTHIANS - 2</option>
+              <option value="vbPHOTO/palmeiras.jpeg">PALMEIRAS - 1</option>
+              <option value="vbPHOTO/palmeiras2.jpeg">PALMEIRAS - 2</option>
+              <option value="vbPHOTO/sp.jpeg">SÃO PAULO - 1</option>
+              <option value="vbPHOTO/sp2.jpeg">SÃO PAULO - 2</option>
+              <option value="vbPHOTO/peixao.jpeg">SANTOS</option>
+           </optgroup>
+
+           <optgroup label="times do RJ">
+              <option value="vbPHOTO/mengo.jpeg">FLAMENGO - 1</option>
+              <option value="vbPHOTO/mengo2.jpeg">FLAMENGO - 2</option>
+              <option value="vbPHOTO/flamengo.jpeg">FLAMENGO - 3</option>
+              <option value="vbPHOTO/fluminense.jpeg">FLUMINENSE</option>
+              <option value="vbPHOTO/vasco.jpeg">VASCO</option>
+              <option value="vbPHOTO/botafogo.jpeg">BOTAFOGO</option>
+           </optgroup>
+          
+           <optgroup label="times do RS">
+              <option value="vbPHOTO/gremio.jpeg">GREMIO</option>
+           </optgroup>
+    
+           <optgroup label="times de GO"> 
+              <option value="vbPHOTO/goias.jpeg">GOIAS - 1</option>
+              <option value="vbPHOTO/goias2.jpeg">GOIAS - 2</option>
+              <option value="vbPHOTO/goias3.jpeg">GOAIS - 3</option>
+              <option value="vbPHOTO/atletGO.jpeg">ATLÉTICO GO</option>
+              <option value="vbPHOTO/vilanova.jpeg">VILA NOVA - 1</option>
+              <option value="vbPHOTO/vilanova2.jpeg">VILA NOVA - 2</option>
+           </optgroup>
+  
+           <optgroup label="times de MG"> 
+              <option value="vbPHOTO/cruzeiro.jpeg">CRUZEIRO</option>
+              <option value="vbPHOTO/atletMg.jpeg">ATLÉTICO MINEIRO</option>
+           </optgroup>
+
+           <optgroup label="seleções"> 
+              <option value="vbPHOTO/argentina.jpeg">ARGENTINA</option>
+              <option value="vbPHOTO/seleBR.jpeg">BRASIL - 1</option>
+              <option value="vbPHOTO/seleBR2.jpeg">BRASIL -2</option>
+              <option value="vbPHOTO/croacia.jpeg">CROACIA</option>
+           </optgroup>
+    
+           <optgroup label="times da espanha">
+              <option value="vbPHOTO/realMadrid.jpeg">REAL MADRID - 1</option>
+              <option value="vbPHOTO/madrista.jpeg">REAL MADRID - 2</option>
+              <option value="vbPHOTO/barcelona.jpeg">BARCELONA - 1</option>
+              <option value="vbPHOTO/barcelona2.jpeg">BARCELONA - 2</option>
+              <option value="vbPHOTO/barcelona3.jpeg">BARCELONA - 3</option>
+              <option value="vbPHOTO/atletMadrid.jpeg">ATLÉTICO DE MADRID</option>
+           </optgroup>
+    
+           <optgroup label="times da inglaterra">
+              <option value="vbPHOTO/manchCity.jpeg">MANCHESTER CITY - 1</option>
+              <option value="vbPHOTO/manchCity2.jpeg">MANCHESTER CITY - 2</option>
+              <option value="vbPHOTO/liverpool.jpeg">LIVERPOOL - 1</option>
+              <option value="vbPHOTO/liverpool2.jpeg">LIVERPOOL - 2</option>
+              <option value="vbPHOTO/arsenal.jpeg">ARSENAL</option>
+           </optgroup>
+
+           <optgroup label="times da alemanha">
+              <option value="vbPHOTO/borussia.jpeg">BORUSSIA DORTMUND</option>
+           </optgroup>
+
+           <optgroup label="times dos EUA">
+            <option value="vbPHOTO/interMiami.jpeg">INTER MIAMI</option>
+         </optgroup>
+
+           <optgroup label="times da arábia saudita">
+              <option value="vbPHOTO/nassr.jpeg">AL-NASSR - 1</option>
+              <option value="vbPHOTO/nassr2.jpeg">AL-NASSR - 2</option>
+           </optgroup>
+           
+           <optgroup label="times da italia">
+             <option value="vbPHOTO/milan.jpeg">MILAN</option>
+             <option value="vbPHOTO/juventus.jpeg">JUVENTUS</option>
+             <option value="vbPHOTO/interMilao.jpeg">INTER DE MILÃO</option>
+         </optgroup>
+
+         <optgroup label="times dos paises baixos">
+            <option value="vbPHOTO/ajax.jpeg">AJAX</option>
+         </optgroup>
+    </select></h3>
+
+    <h3><label for="vb-size3">ESCOLHA O TAMANHO </label><select name="vb-size" id="vb-size3">
+        <option>P</option>
+        <option>M</option>
+        <option>G</option>
+        <option>GG</option>
+    </select></h3>
+  </hgroup> 
+
+    <hgroup id="vb-gene-quant">
+      <h2>Genero: M</h2>
+      <h2>Malha: DRYFIT</h2>
+      <label for="vb-quantid3"><h2>Quantidade:</label><input type="number" name="box-value" id="vb-quantid3" required="" min="1" max="100"/></h2>
+    </hgroup> 
+    
+     <p class="VBaviso">Informe as especificações das peças que deseja, e vá até o final da pagina, para adicionar ao carrinho.</p>
+   </div>
+  
+ <div id="button-submit"></label><input type="button" value="ADICIONAR AO CARRINHO" onclick="buttonFinal()" name="polo-car" id="poloCar"/></br></div>
+
+   <hgroup id="divBuyFinal">
+      <div id="hilfiger"></div>
+      <div id="preco_tot_final"></div>
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+      <div id="div5"></div>
+      <div id="div6"></div>
+
+      <div id="separad1"></div>
+      <div id="separad2"></div>
+
+      <div id="poloBoss"></div>
+      <div id="preco_tot_final2"></div>
+      <div id="div7"></div>
+      <div id="div8"></div>
+      <div id="div9"></div>
+      <div id="div10"></div>
+      <div id="div11"></div>
+      <div id="div12"></div>
+
+      <div id="separad3"></div>
+      <div id="separad4"></div>
+
+      <div id="time_sele"></div>
+      <div id="preco_tot_final3"></div>
+      <div id="div13"></div>
+      <div id="div14"></div>
+      <div id="div15"></div>
+      <div id="div16"></div>
+      <div id="div17"></div>
+      <div id="div18"></div>
+   </hgroup>
+
+   <div id="separad5"></div>
+
+   <div id="separad6"></div>
+
+  <hgroup id="vb-location">
+     <p>ENDEREÇO: Av. Contorno, 1529 - Setor Norte Ferroviário</p>
+     <p>Goiania - GO, 74063-350 </p>
+     <p class="loca-vb">LOCALIZAÇÃO: Corredor 11,  Box 428</p>
+  </hgroup>
+
+ </div>    
+</body>
+</html>
